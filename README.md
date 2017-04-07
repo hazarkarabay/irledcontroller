@@ -21,4 +21,5 @@ Things to know
 
 Since switching frequency of 4kHz is in audible range, this can leads audible noise. I did not hear anything in my application but you must aware of that.  
 The board has an LDR and it only used in first power up. If the ambient light is low while powering on, it will fade lights to %100. After first start-up LDR status is ignored currently (no auto lights-on at night, sorry).  
-ATMega328 is way overkill for this kind of project but I don't have any ATTinys in my hand. Because I have relatively high computing power at my hand, I didn't used lookup tables for CIE 1931 calculation, which deals with floats and exponentials. You probably want use a lookup table if you need to use ATTiny.
+ATMega328 is way overkill for this kind of project but I don't have any ATTinys in my hand. Because I have relatively high computing power at my hand, I didn't used lookup tables for CIE 1931 calculation, which deals with floats and exponentials. You probably want use a lookup table if you need to use ATTiny.  
+If you want use serial debug output, uncomment `#define DEBUG` at line 21.
