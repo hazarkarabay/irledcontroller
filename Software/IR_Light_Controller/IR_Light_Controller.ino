@@ -106,7 +106,8 @@ void loop() {
       }
       lastCommand = millis();
     }
-
+    
+    myReceiver.disableIRIn();
     myReceiver.enableIRIn();
   }
 
